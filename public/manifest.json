@@ -1,6 +1,6 @@
 {
   "name": "Salman & Nabila",
-  "short_name": "S&N",
+  "short_name": "MansAI",
   "description": "Website Bucin Anti Mainstream Salman dan Nabila",
   "start_url": "/",
   "display": "standalone",
@@ -8,12 +8,12 @@
   "theme_color": "#0c1929",
   "icons": [
     {
-      "src": "/assets/logo.png",
+      "src": "/assets/mansAI-ceria.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/assets/logo.png",
+      "src": "/assets/mansAI-ceria.png",
       "sizes": "512x512",
       "type": "image/png"
     }
