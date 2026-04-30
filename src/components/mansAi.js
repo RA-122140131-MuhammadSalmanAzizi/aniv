@@ -118,9 +118,9 @@ Jawabanmu HARUS sangat singkat! Maksimal 1 atau 2 kalimat saja.`
   // Handle mobile keyboard closing -> scroll back up
   input.addEventListener('blur', () => {
     setTimeout(() => {
-      const avatarImg = document.getElementById('ai-avatar-img');
+      const avatarImg = document.querySelector('.ai-avatar-wrapper');
       if (avatarImg) {
-        avatarImg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        avatarImg.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }, 100);
   });

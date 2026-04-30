@@ -330,9 +330,9 @@ export function renderApp() {
       if(aiPinInput) {
         aiPinInput.addEventListener('blur', () => {
           setTimeout(() => {
-            const avatarImg = document.getElementById('ai-avatar-img');
+            const avatarImg = document.querySelector('.ai-avatar-wrapper');
             if (avatarImg) {
-              avatarImg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              avatarImg.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
           }, 100);
         });
