@@ -115,13 +115,17 @@ Jawabanmu HARUS sangat singkat! Maksimal 1 atau 2 kalimat saja.`
     if (e.key === 'Enter') handleSend();
   });
 
-  // Handle mobile keyboard closing -> scroll back up
+  // Handle mobile keyboard closing -> scroll back up (Only for mobile screens)
   input.addEventListener('blur', () => {
-    setTimeout(() => {
-      const avatarImg = document.querySelector('.ai-avatar-wrapper');
-      if (avatarImg) {
-        avatarImg.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }, 100);
+    if (window.innerWidth < 768) {
+      setTimeout(() => {
+        const avatarImg = document.querySelector('.ai-avatar-wrapper');
+        if (avatarImg) {
+          const yOffset = -80; // Offset to account for the navbar
+          const y = avatarImg.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }, 100);
+    }
   });
 }
