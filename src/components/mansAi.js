@@ -114,4 +114,14 @@ Jawabanmu HARUS sangat singkat! Maksimal 1 atau 2 kalimat saja.`
   input.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') handleSend();
   });
+
+  // Handle mobile keyboard closing -> scroll back up
+  input.addEventListener('blur', () => {
+    setTimeout(() => {
+      const avatarImg = document.getElementById('ai-avatar-img');
+      if (avatarImg) {
+        avatarImg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, 100);
+  });
 }

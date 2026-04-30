@@ -326,6 +326,17 @@ export function renderApp() {
           aiResponse.innerText = 'kamu bukan nabila ya!!';
         }
       });
+      // Handle mobile keyboard closing for PIN input
+      if(aiPinInput) {
+        aiPinInput.addEventListener('blur', () => {
+          setTimeout(() => {
+            const avatarImg = document.getElementById('ai-avatar-img');
+            if (avatarImg) {
+              avatarImg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          }, 100);
+        });
+      }
     }
   }
 
