@@ -8,7 +8,7 @@ import { renderBubbles } from './games/bubbles.js';
 
 const games = [
   { id: 'quiz', icon: '🧠', title: 'Tebak Siapa?', desc: 'Quiz seru tentang hubungan Salman & Nabila! Seberapa kenal kamu sama pasanganmu?', render: renderQuiz },
-  { id: 'catch', icon: '💙', title: 'Tangkap Cintaku!', desc: 'Gerakkan keranjang untuk tangkap hati & item farmasi yang jatuh! Hindari yang jahat!', render: renderCatch },
+  { id: 'catch', icon: '🧺', title: 'Tangkap Cintaku!', desc: 'Gerakkan keranjang untuk tangkap hati & item farmasi yang jatuh! Hindari yang jahat!', render: renderCatch },
   { id: 'memory', icon: '🃏', title: 'Memory Cinta', desc: 'Cocokkan kartu-kartu romantis! Uji daya ingatmu tentang simbol cinta kita.', render: renderMemory },
   { id: 'wheel', icon: '🎰', title: 'Roda Bucin', desc: 'Putar roda dan lakukan tantangan romantis! Berani coba? Dare kamu menunggu!', render: renderWheel },
   { id: 'scratch', icon: '🎟️', title: 'Kupon Cinta', desc: 'Gosok kupon dan dapatkan hadiah spesial dari Salman! Bisa ditukar kapan aja!', render: renderScratch },
@@ -107,7 +107,7 @@ export function renderApp() {
       <div class="sec-head">
         <span class="sec-badge">Mini Games</span>
         <h2 class="sec-title">Arena Bucin Anti Mainstream</h2>
-        <p class="sec-sub">Pilih game dan mainkan bersama! Siapa bilang bucin itu membosankan? 😎</p>
+        <p class="sec-sub">Pilih game dan mainkan bersama! Siapa bilang bucin itu membosankan?</p>
       </div>
       <div class="games-grid">
         ${games.map(g => `
@@ -204,12 +204,12 @@ export function renderApp() {
         <div class="letter-stamp"></div>
         <p class="letter-greeting">Untuk Nabila tersayang,</p>
         <div class="letter-body">
-          <p>Aku mungkin bukan orang yang paling romantis, bukan juga yang paling jago ngomong. Tapi satu hal yang pasti — aku sayang kamu dengan cara yang nggak bisa aku jelaskan pakai kata-kata.</p>
+          <p>Aku mungkin bukan orang yang paling romantis, bukan juga yang paling jago ngomong. Tapi satu hal yang pasti, aku sayang kamu dengan cara yang ngga bisa aku jelaskan pakai kata-kata.</p>
           <p>Kamu itu kayak kapsul obat, Bil. Di luar keliatan biasa aja, tapi di dalamnya ada sesuatu yang luar biasa, yang bisa nyembuhin semua luka dan lelah yang aku rasain.</p>
           <p>Terima kasih sudah jadi alasan aku senyum setiap hari. Terima kasih sudah sabar sama aku. Terima kasih sudah pilih aku, di antara semua pilihan yang kamu punya.</p>
-          <p>Aku janji akan terus belajar jadi yang terbaik buat kamu. Nggak sempurna memang, tapi aku akan selalu berusaha.</p>
+          <p>Aku janji akan terus belajar jadi yang terbaik buat kamu. emg blm sempurna, tapi aku akan selalu berusaha.</p>
         </div>
-        <p class="letter-sig">Salman 💙</p>
+        <p class="letter-sig">Salman</p>
       </div>
     </section>
 
@@ -221,7 +221,7 @@ export function renderApp() {
           <div class="chem-el"><span class="chem-sym">Sa</span><span class="chem-name">Salman</span></div>
           <span class="chem-op">+</span>
           <div class="chem-el"><span class="chem-sym">Na</span><span class="chem-name">Nabila</span></div>
-          <span class="chem-op">→</span>
+          <span class="chem-op">=</span>
           <div class="chem-el result"><span class="chem-sym">💙</span><span class="chem-name">Cinta Abadi</span></div>
         </div>
         <p class="chem-note">*Reaksi irreversible, tanpa efek samping (kecuali baper & kangen berlebihan)</p>
